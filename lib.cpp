@@ -25,6 +25,9 @@ int ricerca(char nomi[10][20], char selezione [20]){
                 a++;
             } else {break;}
         }
-        if (a==20) {return i;} }
+        if (a==20) {
+        return i;
+        }
+    }
     return -1;
 }
