@@ -6,9 +6,7 @@ int main(){
     init (lista);
     init (cerca);
     for (int i=0; i<10; i++){
-    cout << "inserisc o nom " << endl;
         cin >> lista [i];}
-    cout << "inserisc o nom da cercare" << endl;
     cin >> cerca ;
             int a = ricerca (lista, cerca);
             if (a!=-1) {
