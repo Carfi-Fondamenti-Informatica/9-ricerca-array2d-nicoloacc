@@ -2,25 +2,17 @@
 
 int main(){
     char lista[10][20];
-    int selezione = 0;
-    int num = 0;
-    while (true) {
-        cout << "1: inserimento " << endl;
-        cout << "2: stampa " << endl;
-        cout << "6: exit " << endl;
-        cin >> selezione;
-        switch (selezione) {
-            case 1:
-                inserimento(lista, num);
-                break;
-            case 2:
-                //stampa(lista);
-                break;
-            case 3:
-                return 0;
-            default:
-                cout << "inculati" << endl;
-        }
-    }
+    char cerca [20];
+    init (lista);
+    init (cerca);
+    for (int i=0; i<10; i++){
+    cout << "inserisc o nom " << endl;
+        cin >> lista [i];}
+    cout << "inserisc o nom da cercare" << endl;
+    cin >> cerca ;
+            int a = ricerca (lista, cerca);
+            if (a!=-1) {
+                cout << a;
+            } else {cout << "non presente" << endl;}
   return 0;
 }
