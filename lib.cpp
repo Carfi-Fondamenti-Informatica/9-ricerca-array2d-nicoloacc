@@ -1,4 +1,3 @@
-
 #include "lib.h"
 
 void init(char mat[10][20]){
@@ -23,7 +22,8 @@ int ricerca(char nomi[10][20], char selezione [20]){
         for(int j=0;j<20;j++){
             if(nomi[i][j] == selezione[j]){
                 a++;
-            } else {break;}
+            } else {
+            break;}
         }
         if (a==20) {
         return i;
