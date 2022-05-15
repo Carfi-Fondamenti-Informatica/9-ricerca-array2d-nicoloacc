@@ -8,12 +8,13 @@ void init(char mat[10][20]){
     }
 }
 
+
 void init(char ar[20]){
     for(int i=0; i<20;i++){
         ar[i] = ' ';
-
     }
 }
+
 
 int ricerca(char nomi[10][20], char selezione [20]){
     int a;
@@ -23,7 +24,8 @@ int ricerca(char nomi[10][20], char selezione [20]){
             if(nomi[i][j] == selezione[j]){
                 a++;
             } else {
-            break;}
+            break;
+            }
         }
         if (a==20) {
         return i;
